@@ -41,7 +41,6 @@ const Footer = ({ darkMode }) => {
 
                     {/* Developer Section */}
                     <div className="flex items-center gap-2 justify-center text-center md:text-right text-lg">
-                        {/* <h3 className="text-lg font-semibold mb-4">Credits</h3> */}
                         <p>
                             Developed by
                         </p>

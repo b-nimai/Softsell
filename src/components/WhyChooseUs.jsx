@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { features } from '../data/WhyChooseUs';
-import Card from './HowItWorkCard1';
 
 export default function WhyChooseUs({ darkMode }) {
     return (
@@ -46,7 +45,6 @@ export default function WhyChooseUs({ darkMode }) {
                                         {feature.description}
                                     </p>
                                 </div>
-
 
                             </motion.div>
                         ))}

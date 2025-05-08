@@ -59,7 +59,7 @@ A responsive single-page marketing website for a fictional software resale start
 5. Open http://localhost:5173 in your browser
 
 ## Live Hosted Link
-[Softsell][https://softsell-lemon.vercel.app/]
+[Softsell](https://softsell-lemon.vercel.app/)
 
 ## Dependencies
 
