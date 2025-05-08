@@ -21,19 +21,19 @@ const Footer = ({ darkMode }) => {
                         <h3 className="text-2xl font-bold mb-4">Connect With Us</h3>
                         <div className="flex justify-around">
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                                className={`${darkMode ? 'text-blue-300 hover:text-blue-200' : 'text-blue-600 hover:text-blue-800'} text-4xl transition-colors`}>
+                                className="text-blue-300 hover:text-blue-200' text-4xl transition-colors">
                                 <FaFacebook />
                             </a>
                             <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"
-                                className={`${darkMode ? 'text-green-300 hover:text-green-200' : 'text-green-600 hover:text-green-800'} text-4xl transition-colors`}>
+                                className="text-green-300 hover:text-green-200 text-4xl transition-colors">
                                 <FaWhatsapp />
                             </a>
                             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
-                                className={`${darkMode ? 'text-gray-300 hover:text-gray-200' : 'text-gray-600 hover:text-gray-800'} text-4xl transition-colors`}>
+                                className="text-gray-300 hover:text-gray-200' text-4xl transition-colors">
                                 <FaTwitter />
                             </a>
                             <a href="https://www.t.me/" target="_blank" rel="noopener noreferrer"
-                                className={`${darkMode ? 'text-blue-300 hover:text-blue-200' : 'text-blue-500 hover:text-blue-700'} text-4xl transition-colors`}>
+                                className="text-blue-300 hover:text-blue-200 text-4xl transition-colors">
                                 <FaTelegram />
                             </a>
                         </div>

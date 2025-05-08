@@ -85,8 +85,8 @@ export default function ContactForm({ darkMode }) {
                         >
                             {/* Mobile form content */}
                             {submitted ? (
-                                <div>
-                                    <ContactFormSubmited />
+                                <div className='flex flex-col justify-center items-center'>
+                                    <ContactFormSubmited darkMode={darkMode}/>
                                     <button onClick={() => setSubmitted(false)} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
                                         Submit Another Inquiry
                                     </button>
@@ -207,8 +207,8 @@ export default function ContactForm({ darkMode }) {
                         >
                             <div className={`p-8 rounded-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-md h-full`}>
                                 {submitted ? (
-                                    <div>
-                                        <ContactFormSubmited />
+                                    <div className='flex flex-col justify-center items-center'>
+                                        <ContactFormSubmited darkMode={darkMode} />
                                         <button onClick={() => setSubmitted(false)} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
                                             Submit Another Inquiry
                                         </button>
