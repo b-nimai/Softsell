@@ -8,31 +8,35 @@ export default function Navbar({ darkMode, setDarkMode }) {
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.5, delay:0.5 }}
                         className="flex-shrink-0 flex items-center"
                     >
-                        <span className="text-xl font-bold text-blue-600">SoftSell</span>
+                        <span className="text-2xl font-bold text-blue-600">SoftSell</span>
                     </motion.div>
 
                     <div className="hidden md:block">
-                        <div className="ml-10 flex items-center space-x-4">
+                        <motion.div 
+                            initial={{opacity: 0}}
+                            animate={{opacity: 1}}
+                            transition={{duration: 0.5, delay: 1}}
+                            className="ml-10 flex items-center space-x-4"
+                        >
                             <a 
-                                href="#how-it-works" 
-                                style={{ scrollBehavior: 'smooth' }}
-                                className={`px-3 py-2 rounded-md text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}
+                                href="#how-it-works"
+                                className={`px-3 py-2 rounded-md text-base font-semibold ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}
                             >
                                 How It Works
                             </a>
-                            <a href="#why-choose-us" className={`px-3 py-2 rounded-md text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
+                            <a href="#why-choose-us" className={`px-3 py-2 rounded-md text-base font-semibold ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
                                 Why Choose Us
                             </a>
-                            <a href="#testimonials" className={`px-3 py-2 rounded-md text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
+                            <a href="#testimonials" className={`px-3 py-2 rounded-sm text-base font-semibold ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
                                 Testimonials
                             </a>
-                            <a href="#contact" className={`px-3 py-2 rounded-md text-sm font-medium ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
+                            <a href="#contact" className={`px-3 py-2 rounded-md text-base font-semibold ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'}`}>
                                 Contact
                             </a>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <button

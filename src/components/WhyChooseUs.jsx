@@ -38,7 +38,7 @@ export default function WhyChooseUs({ darkMode }) {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={feature.icon} />
                                         </svg>
                                     }
-                                    shape={'md'}
+                                    shape={'lg'}
                                     title={feature.name}
                                     description={feature.description}
                                     darkMode={darkMode}
