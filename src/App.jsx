@@ -39,7 +39,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="max-w-3xl">
-            <img src={heroImage} className='w-xl md:w-auto -translate-y-20' />
+            <img src={heroImage} className='w-xl z-20 md:w-auto -translate-y-20' />
           </motion.div>
 
           <div className="-translate-y-10 md:-translate-y-0 relative z-10">
@@ -49,10 +49,10 @@ function App() {
               transition={{ duration: 0.8, delay: 1 }}
               className="p-5 max-w-3xl"
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 font-outfit">
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6 ">
                 Turn Unused Software into <span className="text-blue-600">Cash</span>
               </h1>
-              <p className={`text-xl md:text-2xl mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              <p className={`text-xl font-semibold md:text-2xl mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                 SoftSell helps businesses monetize their unused software licenses quickly and securely.
               </p>
               <button

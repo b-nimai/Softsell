@@ -30,19 +30,24 @@ export default function WhyChooseUs({ darkMode }) {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.8 }}
-                                className={`p-6 rounded-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-md`}
+                                className={`p-6 rounded-lg `}
                             >
-                                <Card
-                                    icon={
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                {/* Why Choose Us points */}
+                                <div className="flex w-full flex-col items-center transition-transform duration-300 hover:scale-105">
+                                    <div className={`flex items-center justify-center size-20 text-blue-600 mb-6`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={feature.icon} />
                                         </svg>
-                                    }
-                                    shape={'lg'}
-                                    title={feature.name}
-                                    description={feature.description}
-                                    darkMode={darkMode}
-                                />
+                                    </div>
+                                    <h3 className="text-lg font-medium mb-2 text-center">
+                                        {feature.name}
+                                    </h3>
+                                    <p className={`text-center ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                                        {feature.description}
+                                    </p>
+                                </div>
+
+
                             </motion.div>
                         ))}
                     </div>

@@ -286,10 +286,10 @@ export default function ContactForm({ darkMode }) {
                                                 <textarea
                                                     id="message"
                                                     name="message"
-                                                    rows="4"
+                                                    rows="6"
                                                     value={formData.message}
                                                     onChange={handleChange}
-                                                    className={`w-full px-4 py-2 rounded-md border ${darkMode ? 'border-gray-600 bg-gray-700 text-white' : 'border-gray-300'} focus:ring-blue-500 focus:border-blue-500`}
+                                                    className={`w-full px-4 py-2 resize-none rounded-md border ${darkMode ? 'border-gray-600 bg-gray-700 text-white' : 'border-gray-300'} focus:ring-blue-500 focus:border-blue-500`}
                                                 ></textarea>
                                             </div>
 

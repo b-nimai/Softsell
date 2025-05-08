@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png'
 
 export default function Navbar({ darkMode, setDarkMode }) {
     return (
@@ -9,9 +10,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay:0.5 }}
-                        className="flex-shrink-0 flex items-center"
+                        className="flex-shrink-0 flex items-center justify-center gap-2"
                     >
-                        <span className="text-2xl font-bold text-blue-600">SoftSell</span>
+                        <img src={logo} alt="logo" className='w-12' />
+                        <span className="text-3xl font-bold text-blue-600">SoftSell</span>
                     </motion.div>
 
                     <div className="hidden md:block">
