@@ -16,12 +16,6 @@ export default function ChatWidget({ darkMode }) {
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
 
-    
-    const openai = new OpenAI({
-        apiKey: import.meta.env.VITE_OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true 
-    });
-
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     };
@@ -39,7 +33,10 @@ export default function ChatWidget({ darkMode }) {
         setIsLoading(true);
 
         try {
-            // Call OpenAI API
+            const openai = new OpenAI({
+                apiKey: import.meta.env.VITE_OPENAI_API_KEY,
+                dangerouslyAllowBrowser: true
+            });
             const response = await openai.chat.completions.create({
                 model: "gpt-4o-mini",
                 messages: [
