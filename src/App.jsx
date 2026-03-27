@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import heroImage from './assets/herobg.png'
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -71,6 +72,7 @@ function App() {
       <ContactForm darkMode={darkMode} />
 
       <ChatWidget darkMode={darkMode} />
+      <BackToTop />
 
       <Footer darkMode={darkMode} />
     </div>
